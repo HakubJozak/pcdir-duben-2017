@@ -1,0 +1,60 @@
+* Gemy
+
+
+* Jazyk
+
+- inspect
+- pry a gemy, require (, LOAD_PATH)
+- typy - dukladne
+- case konstrukce
+
+
+* Opakovani
+
+- enumeratory a funkcionalni programovani
+
+* Priklady
+
+
+
+* Dopoledne
+
+** Zopakovani pomoci prikladu FIBO
+ - iterace pomoci [ 1,2,3,4,5,6,7,8 ]
+ - nahrazeni `times`
+ - cache pomoci pole
+ - ARGV - ktere cislo chceme
+
+** PRIKLAD
+ - udelat tabulku exponencialni funkce
+ - 'nakreslit' Pascaluv trojuhelnik
+ - pocitat PI pomoci Taylorova rozkladu
+
+** Typy a loopy
+ - pole (4-loops.rb: times, downto, upto, while)
+ - 5-types.rb
+ - symboly
+ - poradne udelat Hash, each_pair
+
+
+* Odpoledne
+
+** OOP
+ - vysvetleni objektu
+
+** PRIKLAD: obaleni FIBO tridou
+ - vygenerovat tabulku Fibonacciho cisel 
+ - pripadne vygenerovat Pascaluv trojuhelnik
+
+** Std-core
+ - require (open-uri, erb)
+ - sablona ERB na tabulku vypisu  
+
+** PRIKLAD: vypsat pocasi z libovolneho serveru (require 'open-uri')
+
+** Ekosystem
+ - Sinatra
+ - Mechanize
+
+
+
