@@ -12,9 +12,9 @@
 end
 
 # co dela downto?
-5.downto(2) do |i|  puts i ; end
+5.downto(2).map { |i|  i*i*i }
 
-# a downto?
+# a upto?
 
 #** Pozpatku
 

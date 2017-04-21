@@ -16,7 +16,7 @@ class User
   def name=(new_name)
     @name = new_name.downcase.capitalize
   end
-  
+
   # jakub -> kuba
   # petr  -> peťa
   # ladislav -> laďa
@@ -25,10 +25,6 @@ class User
   def nickname
   end
 end
-
-
-
-
 
 
 j = User.new 'JAKUB'
