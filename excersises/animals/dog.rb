@@ -1,35 +1,7 @@
-# Vytvorte tridu Dog.
-# Bude mit jednu instancni promennou @energy a dve metody.
-#
-#   #eat! - zvysi energie o 10
-#   #walk! - snizi hodnotu energie o 1
-#    #bark! - snizi hodnotu energie o 5
-#
-#   alive? - true, kdyz energie je vetsi nez 0
+class Dog < Animal
 
-
-
-class Dog
-  def initialize(name)
-    @name = name
-    @energy = 10
-  end
-  
-  def bark!
-    puts 'HAF!'
-    @energy -= 5
-  end
-
-  def walk!
-    @energy -= 1
-  end
-
-  def alive?
-    @energy > 0
-  end
-
-  def dead?
-    !alive?
+  def to_s
+    "Pes #{@name}"
   end
 
   def eat!(food = :granule)
@@ -49,8 +21,9 @@ class Dog
     @energy = @energy.round(2)
   end
 
-  def energy
-    @energy
+  def speak!
+    @energy -= 5
+    puts 'woof'
   end
 end
 

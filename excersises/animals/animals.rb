@@ -1,7 +1,13 @@
+require_relative 'animal'
 require_relative 'dog'
 require_relative 'cat'
 
-animal = Cat.new('Micka')
+# animal = Cat.new('Micka')
+animal = Dog.new('Azor')
+animal.energy = 44
+
+
+require 'pry' ; binding.pry
 
 loop do
   puts "---------------------"
@@ -20,9 +26,14 @@ loop do
       animal.eat!
     end
   when 'w' then animal.walk!
-  when 'b' then animal.bark!
+  when 'b'
+    if animal.respond_to?(:bark!)
+      animal.bark!
+    else
+      puts 'This animal cannot bark.'
+    end
   else
-    animal.bark!
+    animal.speak!
   end
 
   if  animal.dead?
