@@ -9,4 +9,7 @@ module HasEnergy
     !alive?
   end
   
+   def energy= (value)
+     
+   end
 end

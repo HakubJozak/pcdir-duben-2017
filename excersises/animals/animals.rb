@@ -1,3 +1,4 @@
+require_relative 'has_energy'
 require_relative 'animal'
 require_relative 'dog'
 require_relative 'cat'
@@ -5,9 +6,6 @@ require_relative 'cat'
 # animal = Cat.new('Micka')
 animal = Dog.new('Azor')
 animal.energy = 44
-
-
-require 'pry' ; binding.pry
 
 loop do
   puts "---------------------"
